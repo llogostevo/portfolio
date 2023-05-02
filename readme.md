@@ -1,7 +1,13 @@
-#TODO
+Read: 
+- how to use git processes
+- aim to implement use of git processes during rest of project
 
+
+_______
 `npm run dev` (to run local server)
+___________
 
+#TODO
 - find fonts from google font(done)
  - apply fonts (done)
  - apply base CSS styles and font size
