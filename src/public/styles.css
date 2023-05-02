@@ -58,6 +58,15 @@ nav {
 
 
 /* LOGOs and IMAGES */
+.img-profile {
+    width: 50%;
+    max-width: 400px;
+    height:auto;
+    border-style: solid;
+    color: black;
+    padding: 5px;
+    box-shadow: 5px 5px;
+}
 #logo {
     height:auto;
     width: 60px;

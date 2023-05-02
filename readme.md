@@ -1,8 +1,16 @@
 #TODO
 
+`npm run dev` (to run local server)
+
 - find fonts from google font(done)
  - apply fonts (done)
  - apply base CSS styles and font size
+
+- find image (silicon hack image) (done)
+- download and upload to file (done)
+- add image to profile (done)
+- resize image (done)
+- flip image if facing left 
 
 - find icon for mail
 - find icon for youtube
