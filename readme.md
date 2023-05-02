@@ -1,11 +1,16 @@
 #TODO
 
+- find fonts from google font(done)
+ - apply fonts (done)
+ - apply base CSS styles and font size
+
 - find icon for mail
 - find icon for youtube
 - find icon for linked in (DONE)
 - find icon for github
 - upload icons to public
-- put icons into Contact
+- put icons into Contact section
+- style icons with css to be suitable size
 
 - setup templating in node and express using mustache
 
