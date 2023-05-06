@@ -191,7 +191,7 @@ header {
     padding: 10px;
 } */
 
-.projects-card-wrapper, .skills-card-wrapper {
+.project-card-wrapper, .skills-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -228,7 +228,7 @@ header {
 /* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
 .card  {
     display: flexbox;
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: 100%;
     box-sizing: border-box;
     border-style: solid;
     background-color: white;
