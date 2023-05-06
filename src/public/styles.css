@@ -202,12 +202,12 @@ header {
 }
 
 
-/* .card-content {
+.card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-} */
+}
 
 @media screen and (max-width: 768px) {
     .card {
@@ -283,7 +283,7 @@ header {
     padding:0;
 }
 
-.skills-card-wrapper .card-body{
+.skills-card-wrapper .card-content{
     padding: 15px;
 }
 /* CARDS Layout */
