@@ -184,9 +184,38 @@ header {
     font-size: 0.8rem;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
 /* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
 .card  {
     display: flexbox;
+    flex-basis: calc(33.333% - 20px);
+    box-sizing: border-box;
     border-style: solid;
     background-color: white;
     color: black;
