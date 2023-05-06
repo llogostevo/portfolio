@@ -184,11 +184,21 @@ header {
     font-size: 0.8rem;
 }
 
+/* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+} */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+    justify-content: center; /* Horizontally center the cards */
+    align-items: center; /* Vertically center the cards */
+    min-height: 100vh; /* Set the minimum height of the container to 100% of the viewport height */
 }
 
 
