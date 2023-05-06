@@ -8,29 +8,31 @@ _______
 ___________
 
 #TODO
-- find fonts from google font(done)
- - apply fonts (done)
+<!-- - find fonts from google font(done)
+ - apply fonts (done) -->
  - apply base CSS styles and font size
 
-- find image (silicon hack image) (done)
+<!-- - find image (silicon hack image) (done)
 - download and upload to file (done)
 - add image to profile (done)
 - resize image (done)
-- flip image if facing left 
+- flip image if facing left  -->
 
 - find icon for mail
-- find icon for youtube
-- find icon for linked in (DONE)
-- find icon for github
-- upload icons to public
+<!-- - find icon for youtube -->
+<!-- - find icon for linked in (DONE) -->
+<!-- - find icon for github -->
+<!-- - upload icons to public -->
 - put icons into Contact section
-- style icons with css to be suitable size
+<!-- - style icons with css to be suitable size in cards -->
+- style icons in contacts section
 
-- setup templating in node and express using mustache
+<!-- - setup templating in node and express using mustache -->
 
-- create JSON for Projects / Skills
-- add github links to projects
-- add youtube links to projects
+<!-- - create JSON for Projects -->
+- Skills
+<!-- - add github links to projects
+- add youtube links to projects -->
 - add pdf links to projects
 - add vercel links to projects
 
