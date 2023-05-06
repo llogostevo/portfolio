@@ -20,7 +20,7 @@ const SKILLS = [
         ]
     },
     {
-        "title": "Soft topics",
+        "title": "Soft Skills",
         "topics": [
             { "name": "Presentations", "level": ["*", "*", "*"] },
             { "name": "Public Speaking", "level": ["*", "*", "*"] },

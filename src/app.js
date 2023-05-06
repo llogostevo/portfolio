@@ -18,17 +18,6 @@ app.set('views', `${__dirname}/pages`);
 app.set('view engine', 'mustache');
 app.engine('mustache', mustacheExpress());
 
-// Define times helper function
-// this is used to display the images
-// mustacheExpress.instance.registerHelper('times', function(n, block) {
-//     var accum = '';
-//     for(var i = 0; i < n; ++i) {
-//         accum += block.fn(i);
-//     }
-//     return accum;
-//   });
-  
-
 // Render the template
 app.get('/', (req, res) => {
     res.render('index', { 
