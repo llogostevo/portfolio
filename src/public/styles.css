@@ -201,6 +201,10 @@ header {
     min-height: 100vh; /* Set the minimum height of the container to 100% of the viewport height */
 }
 
+.card p{
+    margin: 0px;
+    padding: 0px;
+}
 
 .card-content {
     display: flex;
