@@ -175,10 +175,11 @@ header {
 
 /* CARD STYLING */
 /* NEED TO PUT THIS INTO EITHER FLEXBOX OR GRID */
-.project-cards-wrapper {
+/* .project-cards-wrapper {
     text-align: center;
-    /* padding: 5px; */
-}
+    padding: 5px;
+    
+}*/
 
 .card h1 {
     font-size: 0.8rem;
