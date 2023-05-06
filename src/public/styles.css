@@ -181,9 +181,9 @@ header {
     
 }*/
 
-.card h1 {
+/* .card h1 {
     font-size: 0.8rem;
-}
+} */
 
 /* .card-container {
     display: flex;
@@ -236,7 +236,7 @@ header {
     color: black;
     height: auto;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 1rem;
     display: inline-block;
     box-shadow: 5px 5px;
     padding: 10px;
@@ -268,9 +268,9 @@ header {
     height: 30px;
     width: auto;
 }
-.card ul {
+/* .card ul {
     list-style: none;
-}
+} */
 .card h1 {
     text-align: center;
 }
