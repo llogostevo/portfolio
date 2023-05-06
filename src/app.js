@@ -2,16 +2,40 @@
 const express = require('express');
 // import path module to work with file paths
 const path = require('path');
+const mustacheExpress = require('mustache-express');
+const PROJECTS = require('./projects');
+const SKILLS = require('./skills');
+
+
+
 // create a new instance of the express application
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-// route for url('/') of server, execute the function when visited
+// Configure mustache
+app.set('views', `${__dirname}/pages`);
+app.set('view engine', 'mustache');
+app.engine('mustache', mustacheExpress());
+
+// Define times helper function
+// this is used to display the images
+// mustacheExpress.instance.registerHelper('times', function(n, block) {
+//     var accum = '';
+//     for(var i = 0; i < n; ++i) {
+//         accum += block.fn(i);
+//     }
+//     return accum;
+//   });
+  
+
+// Render the template
 app.get('/', (req, res) => {
-    //send a static html file to browser
-    res.sendFile(path.join(__dirname, 'pages/index.html'));
-});
+    res.render('index', { 
+        projects: PROJECTS,
+        skills: SKILLS
+    });
+})
 
 // set the port the server will listen to
 const port = process.env.PORT || 3000;

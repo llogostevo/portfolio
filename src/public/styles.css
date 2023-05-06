@@ -4,6 +4,21 @@
     --bs-primary: #2067F5;
 } */
 
+/* Base Styles */
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -16,6 +31,7 @@ h6 {
     text-decoration-color: #FFE872;
     text-decoration-thickness: 5px;
 }
+
 
 p {
     font-family: 'Mulish', sans-serif;
@@ -41,34 +57,6 @@ nav {
     padding: 0;
   }
   
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    /* color: #fff; */
-    color: black;
-    /* text-decoration: none; */
-    padding: 5px;
-    /* text-decoration: underline;
-    text-decoration-color: #FFE872;
-    text-decoration-thickness: 5px; */
-    /* box-shadow: 5px 5px #FFE872; */
-    box-shadow: 3px 3px black;
-    background-color: #FFE872;
-    /* border-color: black;
-    border-style: solid; */
-  }
-  
-  nav a:hover {
-    /* background-color: #555; */
-    /* box-shadow: 5px 5px black; */
-    box-shadow: 2px 2px black;
-
-  }
-
-
 
 /* LOGOs and IMAGES */
 .img-profile {
@@ -119,8 +107,15 @@ nav {
 
 .button:hover {
     box-shadow: 2px 2px;
+    transition: all 0.2s ease-in-out;
+
 }
 
+/* LEFT ALIGN */
+
+.left-align {
+    text-align: left;;
+}
 
 /* SECTION STYLING - NEED TO ALTER THESE TO CONTAIN GRID OR FLEXBOX */
 
@@ -128,6 +123,7 @@ header {
     background-color: #F9EFE7;
     margin: 0px;
     padding: 50px;
+    padding-bottom: 0px;
     text-align: center;
 }
 #hero {
@@ -137,7 +133,6 @@ header {
     text-align: center;
     
 }
-
 
 #about {
     background-color: white;
@@ -180,23 +175,57 @@ header {
 
 /* CARD STYLING */
 /* NEED TO PUT THIS INTO EITHER FLEXBOX OR GRID */
-#projects .card {
+.project-cards-wrapper {
     text-align: center;
-    padding: 5px;
+    /* padding: 5px; */
 }
-.card {
+
+.card h1 {
+    font-size: 0.8rem;
+}
+
+/* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
+.card  {
+    display: flexbox;
     border-style: solid;
     background-color: white;
     color: black;
-    width: 200px;
-    height: 130px;
-    text-align: left;
+    width: 150px;
+    height: auto;
+    text-align: center;
     font-size: 0.5rem;
     display: inline-block;
     box-shadow: 5px 5px;
-    margin: 3px;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
 }
 
+.card .button {
+    margin: 10px 0px;
+}
+.card img {
+    display: inline-block;
+    filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.2));
+    margin-top: 20px;
+}
+
+.card img {
+    transition: all 0.2s ease-in-out;
+  }
+
+.card img:hover {
+    filter: drop-shadow(0px 0px 0px rgb(0 0 0 / 0.2));
+}
+
+.youtube-on img {
+    height: 20px;
+    width: auto;
+}
+.github-on img {
+    height: 30px;
+    width: auto;
+}
 .card ul {
     list-style: none;
 }
@@ -206,6 +235,22 @@ header {
 
 .card:hover {
     box-shadow: 2px 2px;
+}
+
+.skills-card-wrapper .card img{
+    height: 5px;
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+.skills-card-wrapper .card-body{
+    padding: 15px;
+}
+/* CARDS Layout */
+
+.live-view-off, .github-off, .youtube-off {
+    display: none;
 }
 
 
