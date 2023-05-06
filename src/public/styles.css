@@ -191,7 +191,7 @@ header {
     padding: 10px;
 } */
 
-.card-container {
+.projects-card-wrapper, .skills-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
