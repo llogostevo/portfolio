@@ -224,7 +224,7 @@ header {
 /* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
 .card  {
     display: flexbox;
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(33.33% - 20px);
     box-sizing: border-box;
     border-style: solid;
     background-color: white;
@@ -232,10 +232,10 @@ header {
     /* width: 150px; */
     height: auto;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     display: inline-block;
     box-shadow: 5px 5px;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
     padding-bottom: 30px;
 }
@@ -283,9 +283,9 @@ header {
     padding:0;
 }
 
-.skills-card-wrapper .card-content{
+/* .skills-card-wrapper .card-content{
     padding: 15px;
-}
+} */
 /* CARDS Layout */
 
 .live-view-off, .github-off, .youtube-off {
