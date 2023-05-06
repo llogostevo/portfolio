@@ -227,7 +227,7 @@ header {
 
 /* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
 .card  {
-    display: flexbox;
+    display: flex;
     flex-basis: 100%;
     box-sizing: border-box;
     border-style: solid;
