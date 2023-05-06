@@ -1,15 +1,5 @@
 const SKILLS = [
     {
-        "title": "Algorithms",
-        "topics": [
-            { "name": "Bubble Sort", "level": ["*", "*", "*"] },
-            { "name": "Merge Sort", "level": ["*", "*", "*"] },
-            { "name": "Insertion Sort", "level": ["*", "*", "*"] },
-            { "name": "Dijkstra's", "level": ["*"] },
-            { "name": "A*", "level": ["*"] }
-        ]
-    },
-    {
         "title": "Abstract Data Structures",
         "topics": [
             { "name": "Linked Lists", "level": ["*", "*", "*"] },
@@ -17,6 +7,16 @@ const SKILLS = [
             { "name": "Queues", "level": ["*", "*", "*"] },
             { "name": "Graphs", "level": ["*"] },
             { "name": "Trees", "level": ["*"] }
+        ]
+    },
+    {
+        "title": "Algorithms",
+        "topics": [
+            { "name": "Bubble Sort", "level": ["*", "*", "*"] },
+            { "name": "Merge Sort", "level": ["*", "*", "*"] },
+            { "name": "Insertion Sort", "level": ["*", "*", "*"] },
+            { "name": "Dijkstra's", "level": ["*"] },
+            { "name": "A*", "level": ["*"] }
         ]
     },
     {
@@ -96,7 +96,6 @@ const SKILLS = [
         "topics": [
             { "name": "Relational DB Design", "level": ["*", "*"] },
             { "name": "MySQL", "level": ["*"] },
-            { "name": "PostGres", "level": ["*"] },
             { "name": "SQL", "level": ["*", "*"] },
             { "name": "NoSQL Databases", "level": ["*"] },
             { "name": "Firebase", "level": ["*"] }
@@ -105,8 +104,8 @@ const SKILLS = [
     {
         "title": "Backend",
         "topics": [
-            { "name": "NodeJS", "level": [] },
-            { "name": "Express", "level": [] }
+            { "name": "NodeJS", "level": ["*"] },
+            { "name": "Express", "level": ["*"] }
         ]
     },
     {
@@ -123,9 +122,7 @@ const SKILLS = [
         "title": "Video", "topics": 
         [
             { "name": "Video Editing", "level": ["*", "*"] },
-            { "name": "Final Cut Pro", "level": ["0"] },
-            { "name": "Cam Studio", "level": ["*", "*", "*"] },
-            { "name": "YouTube Videos", "level": ["*", "*"] }
+            { "name": "YouTube Videos", "level": ["*"] }
         ]
     },
     {
