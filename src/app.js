@@ -26,6 +26,11 @@ app.get('/', (req, res) => {
     });
 })
 
+// Render the template for contact
+app.get('/contactme', (req, res) => {
+    res.render('contactme', {});
+})
+
 // set the port the server will listen to
 const port = process.env.PORT || 3000;
 
