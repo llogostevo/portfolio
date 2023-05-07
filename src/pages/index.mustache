@@ -23,9 +23,9 @@
                 <li>About</li>
                 <li>Projects</li>
                 <li>Skills</li> -->
-                <li><a class="button" href="#">me</a></li>
-                <li><a class="button" href="#">my Work</a></li>
-                <li><a class="button" href="#">let's talk</a></li>
+                <li><a class="button" href="index.mustache">me</a></li>
+                <li><a class="button" href="#projects">my work</a></li>
+                <li><a class="button" href="#contact">let's talk</a></li>
             </ul>
         </nav>
     </header>
@@ -70,11 +70,11 @@
 
             {{#projects}}
             <div class="card">
-            <h1>{{title}}</h1>
-            <p>{{description}}</p>
-            <a class="button {{liveView}}" href="{{liveViewLink}}">Live View</a>
-            <a class="{{github}}" href="{{githubLink}}"><img src="github-mark.png"></a>   
-            <a class="{{youtube}}" href="{{youtubeLink}}"><img src="yt_logo_rgb_light.png"></a>   
+                <h1>{{title}}</h1>
+                <p>{{description}}</p>
+                <a class="button {{liveView}}" href="{{liveViewLink}}" target="_blank">Live View</a>
+                <a class="{{github}}" href="{{githubLink}}" target="_blank"><img src="github-mark.png"></a>   
+                <a class="{{youtube}}" href="{{youtubeLink}}" target="_blank"><img src="yt_logo_rgb_light.png"></a>   
             </div>
             {{/projects}}
 
@@ -116,6 +116,13 @@
                     src="prompt_bw.png"></span></h2>
         <p>If you would like to get in touch please contact me via <a href="#">email</a> or <a href="">Linked In</a>.
         </p>
+
+        <div id="image-link-wrapper">
+            <img class="contact-image-text" src="LI-Logo.png">
+            <img class="contact-image" src="email.png">
+            <img class="contact-image" src="github-mark.png">
+            <img class="contact-image-text" src="yt_logo_rgb_light.png">
+        </div>
     </div>
 
     <div id="footer">
@@ -126,6 +133,9 @@
             </li>
             <li>
                 <a href="https://brand.linkedin.com/downloads">Linked In Brand Guidelines</a>
+            </li>
+            <li>
+                <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by lakonicon - Flaticon</a>
             </li>
         </ul>
     </div>

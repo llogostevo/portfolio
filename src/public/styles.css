@@ -9,6 +9,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-size: 16px;
 }
 
 h1 {
@@ -207,12 +208,12 @@ header {
     padding: 0px;
 }
 
-.card-content {
+/* .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .card {
@@ -228,75 +229,100 @@ header {
 
 /* NEED TO ADJUST DISPLAY OF CARDS SO THEY ARE RESPONSIVE */
 .card  {
+    /* flex settings for inside card */
     display: flex;
-    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* flex-basis: 100%; */
+    /* settings for card styling */
     box-sizing: border-box;
     border-style: solid;
     background-color: white;
     color: black;
-    height: auto;
-    text-align: center;
+    /* text-align: center; */
     font-size: 1rem;
-    display: inline-block;
     box-shadow: 5px 5px;
     padding: 10px;
     padding-bottom: 30px;
 }
 
-.card .button {
-    margin: 10px 0px;
-}
-.card img {
-    /* display: inline-block; */
-    filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.2));
-    margin-top: 20px;
-}
+        .card:hover {
+            box-shadow: 2px 2px;
+        }
 
-.card img {
-    transition: all 0.2s ease-in-out;
-  }
+        /* Inner Card Styling */
+        .card .button {
+            margin: 10px 0px;
+        }
+        .card img {
+            /* display: inline-block; */
+            filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.2));
+            margin-top: 20px;
+        }
 
-.card img:hover {
-    filter: drop-shadow(0px 0px 0px rgb(0 0 0 / 0.2));
-}
+        .card img {
+            transition: all 0.2s ease-in-out;
+        }
 
-.youtube-on img {
-    height: 20px;
-    width: auto;
-}
-.github-on img {
-    height: 30px;
-    width: auto;
-}
-/* .card ul {
-    list-style: none;
-} */
-.card h1 {
-    text-align: center;
-}
+        .card img:hover {
+            filter: drop-shadow(0px 0px 0px rgb(0 0 0 / 0.2));
+        }
 
-.card:hover {
-    box-shadow: 2px 2px;
-}
+        .youtube-on img {
+            height: 2em;
+            width: auto;
+        }
+        .github-on img {
+            height: 3em;
+            width: auto;
+        }
 
-.skills-card-wrapper .card img{
-    height: 5px;
-    width: auto;
-    margin: 0;
-    padding:0;
-}
+        /* size of star rating image */
+        .skills-card-wrapper .card img{
+            height: 0.5rem;
+            width: auto;
+            margin: 0;
+            padding:0;
+        }
 
-/* .skills-card-wrapper .card-content{
-    padding: 15px;
-} */
-/* CARDS Layout */
-
-.live-view-off, .github-off, .youtube-off {
-    display: none;
-}
+        /* to hide images inside project cards if link is not present */
+        .live-view-off, .github-off, .youtube-off {
+            display: none;
+        }
 
 
 /* MOBILE VIEW */
 .mobile-hide {
     display: none;
+}
+
+/* Contact Section Home Page */
+#contact #image-link-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;  
+}
+
+/* Flexbox properties for each grid cell */
+#contact #image-link-wrapper > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* github and email */
+.contact-image {
+
+    height: 50px;
+    max-width: auto;
+}
+
+/* youtube and linked in */
+.contact-image-text {
+
+    height: auto;
+    max-width: 200px;
 }
