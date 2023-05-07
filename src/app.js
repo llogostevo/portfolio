@@ -54,6 +54,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+// contact form route
 app.post('/contactme', (req,res) =>{
     console.log(req.body);
     const {name, email, inquiryType, message} = req.body;
