@@ -180,7 +180,7 @@ a {
 
 /* SOCIAL IMAGE STYLES */
 .linkedin-name, .linkedin-logo, .github-logo, .github-name, .youtube-name, .youtube-logo {
-    height: 1.5rem;
+    height: 3rem;
     width: auto;
 }
 
@@ -265,6 +265,7 @@ header {
 
 #about-grid {
     display:grid;
+    gap: 3rem;
 }
 
 #about-image-container {
@@ -287,7 +288,7 @@ header {
     #about-grid {
         /* align text left and icons right */
         grid-template-columns: 3fr 1fr;
-        gap: 3rem;
+        gap: 10rem;
     }
 
     #about-image-container {
