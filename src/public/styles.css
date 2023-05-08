@@ -662,6 +662,8 @@ header {
     padding: 0.8rem 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Mulish', sans-serif;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -676,6 +678,8 @@ header {
     margin-bottom: 1rem;
     font-size: 1rem;
     background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Mulish', sans-serif;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
@@ -694,6 +698,8 @@ header {
     padding: 0.8rem 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Mulish', sans-serif;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -703,7 +709,10 @@ header {
   /* Form button */
   .form-button {
     display: inline-block;
+    color: rgba(0, 0, 0, 0.87);
     cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
   }
 
 /* ********************* */
