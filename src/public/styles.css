@@ -346,6 +346,31 @@ header {
     text-align: center;
 }
 
+/* Styles for screens larger than 992px */
+@media only screen and (min-width: 993px) {
+    
+    #projects h2 {
+        text-align: left;
+    }
+  }
+
+/* ******************************** */
+/*         SKILLS STYLING          */
+/* ******************************** */
+#skills {
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+}
+
+  /* Styles for screens larger than 992px */
+@media only screen and (min-width: 993px) {
+    
+    #skills h2 {
+        text-align: left;
+    }
+  }
+
 /* ******************************** */
 /*         CONTACT STYLING          */
 /* ******************************** */
