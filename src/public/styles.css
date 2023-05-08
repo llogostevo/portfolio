@@ -520,29 +520,29 @@ header {
 /*           CARD INNER STYLING     */
 /* ******************************** */
 
-/* .card {
-    padding: 1rem;
-} */
+
 .card p{
     margin: 0px;
     padding: 0px;
+    font-size: 0.875rem;
 }
 
 .card h3 {
-    margin: 0;
+    margin: 0px;
+    margin-bottom: 0.7rem;
 }
 
-/* @media screen and (max-width: 768px) {
-    .card {
-        flex-basis: calc(50% - 20px);
+/* Styles for screens between 320px and 480px */
+@media only screen and (max-width: 480px) {
+    .card p{
+        font-size: 0.75rem;
     }
-}
-
-@media screen and (max-width: 480px) {
-    .card {
-        flex-basis: 100%;
+    
+    .card h3 {
+        margin-bottom: 0.875rem;
     }
-} */
+    
+  }
 
 .card  {
     /* flex settings for inside card */
@@ -552,6 +552,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding:1rem;
     /* settings for card styling */
     box-sizing: border-box;
     border-style: solid;
