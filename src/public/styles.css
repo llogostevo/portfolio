@@ -286,7 +286,13 @@ header {
 
     #about-grid {
         /* align text left and icons right */
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #about-image-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
     }
 
   }
