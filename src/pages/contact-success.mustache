@@ -31,11 +31,12 @@
             <a id="contact-button" class="button" href="#contactme">Contact Me</a>
         </div>
     </div>
-
-<!-- Form for email -->
 <div id="contactme">
     <h2 id="contact-heading"><span><img class="prompt" src="prompt_bw.png"></span>Email<span><img class="prompt"
                     src="prompt_bw.png"></span></h2>
+        {{! Status Message will go in here }}
+        <p>{{ statusMessage }}</p>
+        {{! form displayed again }}
         <div class="form-container">
             <form action="/contactme" method="POST">
                 <div class="form-items">
@@ -60,7 +61,6 @@
             </form>
         </div>
     </div>
-
 {{!  Social Media }}
 <div id="contact-social-grid">
 <div class="social-image-container">

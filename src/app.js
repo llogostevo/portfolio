@@ -68,13 +68,22 @@ app.post('/contactme', (req,res) =>{
     transporter.sendMail(mailOptions, (error, info)=> {
         if (error) {
             console.error(error);
-            res.send('There was an error sending your message, please try again')
+            const statusMessage = 'There was an error sending your message, please try again'
+            res.redirect('/contact-success?status=' + encodeURIComponent(statusMessage));
         } else {
             console.log('Email sent: '+info.response);
-            res.status(200).send('Your message was sent successfully!');
+            const statusMessage = 'Your message was sent successfully!';
+            res.redirect('/contact-success?status=' + encodeURIComponent(statusMessage));
+            // res.status(200).send('Your message was sent successfully!');
         }
     });
 
+});
+
+// contact success route
+app.get('/contact-success', (req, res) => {
+    const statusMessage = req.query.status || 'Your message was sent successfully!';
+    res.render('contact-success', { statusMessage: statusMessage });
 });
 
 // set the port the server will listen to

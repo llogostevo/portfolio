@@ -485,7 +485,7 @@ header {
 
 /* to keep the site relatively central on larger screens */
 @media only screen and (min-width: 993px) {
-    header, #hero, #about, #projects, #footer, #contactme, #contact-social-grid {
+    header, #hero, #about, #projects, #skills, #footer, #contactme, #contact-social-grid {
         /* keep the nav relatively central on larger screen sizes */
         padding-left:10%;
         padding-right:10%;             
@@ -621,8 +621,6 @@ header {
 #contact-heading{
     margin-top:0px;
 }
-
-
 
 /* ************** */
 /*      FORM      */
