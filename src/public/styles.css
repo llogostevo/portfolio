@@ -65,23 +65,86 @@ h6 {
     text-decoration-thickness: 5px;
 }
 
+/* all anchor links  */
 a {
     text-decoration: none;
-    /* font-family: 'Mulish', sans-serif; */
 }
 
-/* navigation */
-nav {
-    font-size: 18px;
-    padding: 10px;
+/* LEFT ALIGN */
+.left-align {
+    text-align: left;
+}
+
+/* HIDDEN IN ALL MOBILE VIEWS */
+/* Styles for screens smaller than 320px */
+@media only screen and (max-width: 480px) {
+    /* Your CSS styles go here */
+    .mobile-hide {
+        display: none;
+    }
+  }
+
+  /* HIDDEN IN TABLET VIEWS */
+/* Styles for screens between 481px and 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your CSS styles go here */
+    .tablet-hide {
+        display: none;
+    }
+  }
+
+
+/* ********************** */
+/*   NAVIGATION STYLING   */
+/* ********************** */
+
+  nav {
+    display: grid;
+  }
+
+  nav a {
+    align-self:center;
+    justify-self:center;
+  }
+
+/* Styles for screens between 768px and 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Your CSS styles go here */
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
   }
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  /* Styles for screens larger than 992px */
+  @media only screen and (min-width: 993px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* keep the nav relatively central on larger screen sizes */
+        margin-left:10%;
+        margin-right:10%;             
+      }
+    
   }
-  
+/* *************************** */
+/*     SITE HEADER TITLE       */
+/* *************************** */
+
+/* Styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+   .reduce-heading {
+    font-size: 1rem;
+    /* font-style:  */
+    display: inline-block;
+   }
+  }
+
+/* ********************** */
+/*     IMAGE STYLING      */
+/* ********************** */
 
 /* LOGOs and IMAGES */
 .img-profile {
@@ -117,6 +180,11 @@ nav {
     margin-right: 10px;
 }
 
+
+/* ********************** */
+/*     BUTTON STYLING     */
+/* ********************** */
+
 /* Button Styling */
 .button {
     border-style: solid;
@@ -136,16 +204,19 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
-/* LEFT ALIGN */
 
-.left-align {
-    text-align: left;;
-}
-
+/* ******************************** */
+/* ******************************** */
 /* ******************************** */
 /*         SECTION STYLING          */
 /* ******************************** */
+/* ******************************** */
+/* ******************************** */
 
+
+/* ******************************** */
+/*         HEADER STYLING          */
+/* ******************************** */
 header {
     background-color: #F9EFE7;
     margin: 0px;
@@ -153,6 +224,17 @@ header {
     padding-bottom: 0px;
     text-align: center;
 }
+
+/* Styles for screens between 480px and above */
+@media only screen and (min-width: 481px) {
+    #my-work-button {
+        margin-right:10px;
+    }
+    #contact-button {
+        margin-left:10px;
+    }
+  }
+
 #hero {
     background-color: #F9EFE7;
     margin: 0px;
@@ -199,6 +281,15 @@ header {
     text-decoration: underline;
     text-decoration-color: #F9EFE7;
 }
+
+/* to keep the site relatively central on larger screens */
+@media only screen and (min-width: 993px) {
+    header, #hero, #about, #projects, #contact, #footer {
+        /* keep the nav relatively central on larger screen sizes */
+        padding-left:10%;
+        padding-right:10%;             
+      }
+  }
 
 /* ******************************** */
 /*           CARD LAYOUT            */
@@ -298,12 +389,6 @@ header {
         .live-view-off, .github-off, .youtube-off {
             display: none;
         }
-
-
-/* MOBILE VIEW */
-.mobile-hide {
-    display: none;
-}
 
 /* ******************************** */
 /*   HOME: CONTACT SECTION LAYOUT   */
