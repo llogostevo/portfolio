@@ -179,7 +179,7 @@ a {
 
 /* SOCIAL IMAGE STYLES */
 .linkedin-name, .linkedin-logo, .github-logo, .github-name, .youtube-name, .youtube-logo {
-    height: 3rem;
+    height: 2rem;
     width: auto;
 }
 
@@ -275,17 +275,19 @@ header {
     align-items: center;
 }
 
+#about .talk-button {
+    margin: 1rem;
+}
+
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
-    #about {
-        background-color: white;
-        margin: 0px;
-        padding: 50px;
-        text-align: center;
+    #about .talk-button {
+        margin: 2rem;
     }
 
-    #about p {
-        text-align: center;
+
+    #about p, #about h {
+        text-align: left;
     }
 
     #about-grid {
@@ -304,7 +306,7 @@ header {
 
   /* Styles for screens larger than 992px */
   @media only screen and (min-width: 993px) {
-    #about {
+    #about, #about p {
         text-align: left;
     }
   }
