@@ -262,7 +262,7 @@ header {
 
 /* Linked in inline text */
 #inline-linkedin {
-    height: 0.8rem;
+    height: 0.9rem;
     width: auto;
 }
 /* NB> OTHER ICONS STYLED IN BASE CSS AT TOP */
@@ -286,12 +286,24 @@ header {
     padding:0px;
 }
 
+
+
+/* Styles for screens between 320px and 480px */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .linkedin-logo, .github-logo, .youtube-logo {
+        height: 3rem;
+        width: auto;
+    }
+  }
+
 /* Styles for screens between 480px and 768px */
 @media only screen and (min-width: 481px) {
     #about-grid {
         gap: 3rem;
     }
   }
+
+
 
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
