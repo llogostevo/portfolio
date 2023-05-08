@@ -229,25 +229,27 @@ a {
 header {
     background-color: #F9EFE7;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     padding-bottom: 0px;
     text-align: center;
 }
 
+
 /* Styles for screens between 480px and above */
 @media only screen and (min-width: 481px) {
-    #my-work-button {
-        margin-right:10px;
-    }
+
     #contact-button {
-        margin-left:10px;
+        margin:0.8rem;
+    }
+    #skills-button {
+        margin:0.8rem;
     }
   }
 
 #hero {
     background-color: #F9EFE7;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
     
 }
@@ -258,7 +260,7 @@ header {
 #about {
     background-color: white;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
@@ -343,7 +345,7 @@ header {
 #projects {
     background-color: #F9EFE7;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
@@ -360,7 +362,7 @@ header {
 /* ******************************** */
 #skills {
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
@@ -380,7 +382,7 @@ header {
 #contact {
     background-color: #F9EFE7;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
@@ -418,7 +420,7 @@ header {
 /* github and email image styling */
 .contact-image {
 
-    height: 50px;
+    height: 3.125rem;
     max-width: auto;
 }
 
@@ -710,7 +712,7 @@ header {
 #contactme {
     background-color: white;
     margin: 0px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
