@@ -338,14 +338,14 @@ header {
 #contact #image-link-wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; 
+    gap: 0.5rem; 
 }
 
     /* 2 columns in med mob */
     @media screen and (min-width: 480px) {
         #contact #image-link-wrapper{
             grid-template-columns: 1fr 1fr;
-            gap: 10px; 
+            gap: 0.625rem; 
         }
     }
 
@@ -353,7 +353,7 @@ header {
     @media screen and (min-width: 768px) {
         #contact #image-link-wrapper{
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px; 
+            gap: 1.25rem; 
         }
     }
 
