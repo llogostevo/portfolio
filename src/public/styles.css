@@ -75,30 +75,29 @@ a {
     text-align: left;
 }
 
-/* HIDDEN IN ALL MOBILE VIEWS */
 /* Styles for screens smaller than 320px */
 @media only screen and (max-width: 480px) {
-    /* Your CSS styles go here */
-    .mobile-hide {
+/* HIDDEN IN ALL MOBILE VIEWS */
+.mobile-hide {
         display: none;
-    }
+}
   }
 
-  /* HIDDEN IN TABLET VIEWS */
+
+
 /* Styles for screens between 481px and 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Your CSS styles go here */
-    .tablet-hide {
+  /* HIDDEN IN TABLET VIEWS */
+  .tablet-hide {
         display: none;
     }
-    
+
   }
 
-  /* HIDDEN IN DESKTOP VIEWS */
 /* Styles for screens between 769px and above */
 @media only screen and (min-width: 769px) {
-    /* Your CSS styles go here */
-    .desktop-hide {
+  /* HIDDEN IN DESKTOP VIEWS */
+  .desktop-hide {
         display: none;
     }
   }
@@ -282,7 +281,11 @@ header {
         background-color: white;
         margin: 0px;
         padding: 50px;
-        text-align: left;
+        text-align: center;
+    }
+
+    #about p {
+        text-align: center;
     }
 
     #about-grid {
@@ -297,6 +300,13 @@ header {
         align-items: flex-start;
     }
 
+  }
+
+  /* Styles for screens larger than 992px */
+  @media only screen and (min-width: 993px) {
+    #about {
+        text-align: left;
+    }
   }
 
 /* ******************************** */
