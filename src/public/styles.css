@@ -273,9 +273,9 @@ header {
     gap: 1.5rem;
 }
 
-.social-container {
+.social-image-container {
     display: flex;
-    /* horizontal evently spaced */
+    /* horizontal evenly spaced */
     justify-content: space-evenly; 
     /* vertically in the middle */
     align-items: center;
@@ -317,7 +317,7 @@ header {
         gap: 10rem;
     }
 
-    .social-image-container {
+    #about-grid .social-image-container {
         flex-direction: column;
         justify-content: space-evenly; 
         align-items: flex-start;
@@ -433,17 +433,18 @@ header {
     background-color: lightgrey;
     margin: 0px;
     padding: 50px;
-    text-align: center;
+    display: grid;
 }
 
-#footer ul {
-    color: white;
-    list-style: none;
-}
+/* Styles for screens between 768px and 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #footer {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
 
 #footer a {
     color: white;
-    text-decoration: underline;
     text-decoration-color: #F9EFE7;
 }
 
@@ -645,3 +646,14 @@ header {
     display: inline-block;
     cursor: pointer;
   }
+
+/* ********************* */
+/*      SOCIAL IMAGES    */
+/* ********************* */
+  #contact-social-grid {
+    display:grid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* NB> Social image container styled within about styling.  */
