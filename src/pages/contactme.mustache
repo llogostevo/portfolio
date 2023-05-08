@@ -23,8 +23,8 @@
     </header>
     <div id="hero">
         <!-- PAGE HEADING AND INTRO TITLE -->
-        <h1>Contact Me</h1>
-        <p>If you would like to reach out then drop me a line</p>
+        <h1 id="contact-heading">Contact Me</h1>
+        <p>If you would like to reach out, then drop me a line using the form below.</p>
         <!-- CALL TO ACTION BUTTONS -->
         <div>
             <a id="my-work-button" class="button" href="\#projects">My Projects</a>
@@ -33,27 +33,34 @@
     </div>
 
 <!-- Form for email -->
-    <div id="contact" class="form-container">
-        <form action="/contactme" method="POST">
-        <label class="form-label" for="name">Name:</label>
-        <input class="form-input" type="text" id="name" name="name" required>
+<div id="contactme">
+    <h2 id="contact-heading">Email</h1>
+        <div class="form-container">
+            <form action="/contactme" method="POST">
+                <div class="form-items">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-input" type="text" id="name" name="name" required>
 
-        <label class="form-label" for="email">Email:</label>
-        <input class="form-input" type="email" id="email" name="email" required>
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
 
-        <label class="form-label" for="inquiry-type">Type of Inquiry:</label>
-        <select class="form-select" id="inquiry-type" name="inquiry-type">
-            <option value="tutoring">Private Tutoring</option>
-            <option value="coding">Coding Work</option>
-            <option value="other">Other</option>
-        </select>
+                    <label class="form-label" for="inquiry-type">Type of Inquiry:</label>
+                    <select class="form-select" id="inquiry-type" name="inquiry-type">
+                        <option value="tutoring">Private Tutoring</option>
+                        <option value="coding">Coding Work</option>
+                        <option value="other">Other</option>
+                    </select>
 
-        <label class="form-label" for="message">Message:</label>
-        <textarea class="form-textarea" id="message" name="message" required></textarea>
+                    <label class="form-label" for="message">Message:</label>
+                    <textarea class="form-textarea" id="message" name="message" required></textarea>
+                </div>
+            <button class="button form-button" type="submit">Send</button>
+            
+            </form>
+        </div>
+    </div>
 
-        <button class="button form-button" type="submit">Send</button>
-        </form>
-</div>
+{{!  Social Media }}
 <div id="contact-social-grid">
 <div class="social-image-container">
                         <div id="linkedin-branding">

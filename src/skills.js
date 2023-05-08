@@ -57,7 +57,7 @@ const SKILLS = [
         ]
     },
     {
-        "title": "Teaching and Curriculum",
+        "title": "Teaching & Curriculum",
         "topics": [
             { "name": "Project Based", "level": ["*", "*", "*"] },
             { "name": "Inquiry Based", "level": ["*", "*", "*"] },

@@ -53,21 +53,21 @@ ___________
 - setup email provider to set forwarding to gmail account -->
 
 
-- about section
-    - heading to centre on smaller tablet (or vertical view), left on larger tablet
+<!-- - about section
+    - heading to centre on smaller tablet (or vertical view), left on larger tablet -->
 
-- projects and skills cards
+<!-- - projects and skills cards
     - heading smaller in cards (size should be h3 equiv - 1.5rem)
     - use flex to spread elements out and to center elements
     - padding in card
     - everything centered
-    - everything spaced out vertically
+    - everything spaced out vertically -->
 
 
 
-- setup breakpoint for desktop
+<!-- - setup breakpoint for desktop
     - text width to respond appropriately
-    - cards to adjust to page
+    - cards to adjust to page -->
 
 #Future Developments
 - create burger menu
