@@ -278,10 +278,7 @@ header {
     /* vertically in the middle */
     align-items: center;
 }
-/* 
-#about .talk-button {
-    margin: 1rem;
-} */
+
 
 #about-container a, #inline-linkedin {
     margin: 0px;
@@ -290,9 +287,6 @@ header {
 
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
-    /* #about .talk-button {
-        margin: 2rem;
-    } */
 
     #about p, #about h {
         text-align: left;
