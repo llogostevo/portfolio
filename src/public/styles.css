@@ -441,7 +441,7 @@ header {
 /*           CARD LAYOUT            */
 /* ******************************** */
 
-.project-card-wrapper, .skills-card-wrapper {
+.project-cards-wrapper, .skills-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     /* gap: 10px;
