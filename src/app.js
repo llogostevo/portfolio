@@ -45,7 +45,7 @@ app.get('/contactme', (req, res) => {
 
 const transporter = nodemailer.createTransport({
     host:'mail.gmx.com', //smtp host
-    port: 465, //smtp port
+    port: 587, //smtp port
     secure: true, // secure version of transport
     auth: {
         // user+pass keys from .env file
