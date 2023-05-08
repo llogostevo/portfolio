@@ -91,6 +91,16 @@ a {
     .tablet-hide {
         display: none;
     }
+    
+  }
+
+  /* HIDDEN IN DESKTOP VIEWS */
+/* Styles for screens between 769px and above */
+@media only screen and (min-width: 769px) {
+    /* Your CSS styles go here */
+    .desktop-hide {
+        display: none;
+    }
   }
 
 
@@ -107,9 +117,10 @@ a {
     justify-self:center;
   }
 
-/* Styles for screens between 768px and 992px */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    /* Your CSS styles go here */
+  /* NAV RESPONSIVE STYLING */
+/* Styles for screens between 768px and above */
+/* Split into columns */
+@media only screen and (min-width: 769px) {
     nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -120,9 +131,6 @@ a {
   /* Styles for screens larger than 992px */
   @media only screen and (min-width: 993px) {
     nav {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
         /* keep the nav relatively central on larger screen sizes */
         margin-left:10%;
         margin-right:10%;             
@@ -161,6 +169,7 @@ a {
     width: 60px;
 }
 
+/* PROMPT IMAGE STYLES */
 .prompt {
     height: 1rem;
     width: auto;
@@ -169,17 +178,11 @@ a {
     margin-top:10px;
 }
 
-.linked-in-name {
-    height: 1.5rem;
+/* SOCIAL IMAGE STYLES */
+.linkedin-name, .linkedin-logo, .github-logo, .github-name, .youtube-name, .youtube-logo {
+    height: 3rem;
     width: auto;
 }
-
-.linked-in-logo {
-    height: 1.5rem;
-    width: auto;
-    margin-right: 10px;
-}
-
 
 /* ********************** */
 /*     BUTTON STYLING     */
@@ -243,6 +246,9 @@ header {
     
 }
 
+/* ******************************** */
+/*         ABOUT STYLING          */
+/* ******************************** */
 #about {
     background-color: white;
     margin: 0px;
@@ -250,6 +256,52 @@ header {
     text-align: center;
 }
 
+/* Linked in inline text */
+#inline-linkedin {
+    height: 0.8rem;
+    width: auto;
+}
+/* NB> OTHER ICONS STYLED IN BASE CSS AT TOP */
+
+#about-grid {
+    display:grid;
+    gap: 3rem;
+}
+
+#about-image-container {
+    display: flex;
+    /* horizontal evently spaced */
+    justify-content: space-evenly; 
+    /* vertically in the middle */
+    align-items: center;
+}
+
+/* Styles for screens between 768px and above */
+@media only screen and (min-width: 769px) {
+    #about {
+        background-color: white;
+        margin: 0px;
+        padding: 50px;
+        text-align: left;
+    }
+
+    #about-grid {
+        /* align text left and icons right */
+        grid-template-columns: 3fr 1fr;
+        gap: 10rem;
+    }
+
+    #about-image-container {
+        flex-direction: column;
+        justify-content: space-evenly; 
+        align-items: flex-start;
+    }
+
+  }
+
+/* ******************************** */
+/*         PROJECTS STYLING          */
+/* ******************************** */
 #projects {
     background-color: #F9EFE7;
     margin: 0px;
@@ -257,6 +309,9 @@ header {
     text-align: center;
 }
 
+/* ******************************** */
+/*         CONTACT STYLING          */
+/* ******************************** */
 #contact {
     background-color: #F9EFE7;
     margin: 0px;
@@ -264,6 +319,54 @@ header {
     text-align: center;
 }
 
+/* Contact Section Home Page */
+#contact #image-link-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+
+    /* 2 columns in med mob */
+    @media screen and (min-width: 480px) {
+        #contact #image-link-wrapper{
+            grid-template-columns: 1fr 1fr;
+            gap: 10px; 
+        }
+    }
+
+    /*  4 columns tablet and above */
+    @media screen and (min-width: 768px) {
+        #contact #image-link-wrapper{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px; 
+        }
+    }
+
+    /* THIS MIGHT GET MOVED TO SECOND PAGE AND BE OBSOLETE */
+/* Flex container to align images inside grid box */
+.flex-container {
+ display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* github and email image styling */
+.contact-image {
+
+    height: 50px;
+    max-width: auto;
+}
+
+/* youtube and linked in image styling */
+.contact-image-text {
+
+    height: auto;
+    max-width: 200px;
+}
+
+/* ******************************** */
+/*         FOOTER STYLING          */
+/* ******************************** */
 #footer {
     background-color: lightgrey;
     margin: 0px;
@@ -291,6 +394,18 @@ header {
       }
   }
 
+  
+
+
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/*         CARDS STYLING          */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+
+
 /* ******************************** */
 /*           CARD LAYOUT            */
 /* ******************************** */
@@ -306,7 +421,7 @@ header {
 }
 
 /* ******************************** */
-/*           CARD STYLING           */
+/*           CARD INNER STYLING     */
 /* ******************************** */
 
 .card p{
@@ -391,56 +506,13 @@ header {
         }
 
 /* ******************************** */
-/*   HOME: CONTACT SECTION LAYOUT   */
+/* ******************************** */
+/* ******************************** */
+/*        CONTACT PAGE: Styling     */
+/* ******************************** */
+/* ******************************** */
 /* ******************************** */
 
-/* Contact Section Home Page */
-#contact #image-link-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px; 
-}
-
-    /* 2 columns in med mob */
-    @media screen and (min-width: 480px) {
-        #contact #image-link-wrapper{
-            grid-template-columns: 1fr 1fr;
-            gap: 10px; 
-        }
-    }
-
-    /*  4 columns tablet and above */
-    @media screen and (min-width: 768px) {
-        #contact #image-link-wrapper{
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px; 
-        }
-    }
-
-/* Flex container to align images inside grid box */
-.flex-container {
- display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-/* github and email image styling */
-.contact-image {
-
-    height: 50px;
-    max-width: auto;
-}
-
-/* youtube and linked in image styling */
-.contact-image-text {
-
-    height: auto;
-    max-width: 200px;
-}
-
-/* ******************************** */
-/*       CONTACT PAGE: Styling      */
-/* ******************************** */
 
 /* ************** */
 /*      FORM      */
