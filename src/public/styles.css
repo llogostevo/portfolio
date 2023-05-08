@@ -286,10 +286,9 @@ header {
 
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
-    #about .talk-button {
+    /* #about .talk-button {
         margin: 2rem;
-    }
-
+    } */
 
     #about p, #about h {
         text-align: left;
