@@ -273,7 +273,7 @@ header {
     gap: 1.5rem;
 }
 
-#about-image-container {
+.social-container {
     display: flex;
     /* horizontal evently spaced */
     justify-content: space-evenly; 
@@ -317,7 +317,7 @@ header {
         gap: 10rem;
     }
 
-    #about-image-container {
+    .social-image-container {
         flex-direction: column;
         justify-content: space-evenly; 
         align-items: flex-start;
