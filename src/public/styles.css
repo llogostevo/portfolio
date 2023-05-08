@@ -4,6 +4,37 @@
     --bs-primary: #2067F5;
 } */
 
+/* Breakpoints */
+
+/* Styles for screens smaller than 320px */
+@media only screen and (max-width: 320px) {
+    /* Your CSS styles go here */
+  }
+  
+  /* Styles for screens between 320px and 480px */
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    /* Your CSS styles go here */
+  }
+  
+  /* Styles for screens between 480px and 768px */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your CSS styles go here */
+  }
+  
+  /* Styles for screens between 768px and 992px */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Your CSS styles go here */
+  }
+  
+  /* Styles for screens larger than 992px */
+  @media only screen and (min-width: 993px) {
+    /* Your CSS styles go here */
+  }
+
+/* **************** */
+/*   SITE STYLING   */
+/* **************** */
+
 /* Base Styles */
 
 body {
@@ -111,7 +142,9 @@ nav {
     text-align: left;;
 }
 
-/* SECTION STYLING - NEED TO ALTER THESE TO CONTAIN GRID OR FLEXBOX */
+/* ******************************** */
+/*         SECTION STYLING          */
+/* ******************************** */
 
 header {
     background-color: #F9EFE7;
@@ -167,7 +200,9 @@ header {
     text-decoration-color: #F9EFE7;
 }
 
-/* CARD STYLING */
+/* ******************************** */
+/*           CARD LAYOUT            */
+/* ******************************** */
 
 .project-card-wrapper, .skills-card-wrapper {
     display: flex;
@@ -178,6 +213,10 @@ header {
     align-items: center; /* Vertically center the cards */
     min-height: 100vh; /* Set the minimum height of the container to 100% of the viewport height */
 }
+
+/* ******************************** */
+/*           CARD STYLING           */
+/* ******************************** */
 
 .card p{
     margin: 0px;
@@ -266,6 +305,10 @@ header {
     display: none;
 }
 
+/* ******************************** */
+/*   HOME: CONTACT SECTION LAYOUT   */
+/* ******************************** */
+
 /* Contact Section Home Page */
 #contact #image-link-wrapper{
     display: grid;
@@ -289,37 +332,34 @@ header {
         }
     }
 
-
-
 /* Flex container to align images inside grid box */
 .flex-container {
  display: flex; 
     justify-content: center;
     align-items: center;
 }
-/* Flexbox properties for each grid cell */
-/* #contact #image-link-wrapper > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
-/* github and email */
+/* github and email image styling */
 .contact-image {
 
     height: 50px;
     max-width: auto;
 }
 
-/* youtube and linked in */
+/* youtube and linked in image styling */
 .contact-image-text {
 
     height: auto;
     max-width: 200px;
 }
 
+/* ******************************** */
+/*       CONTACT PAGE: Styling      */
+/* ******************************** */
 
-/* STYLING FOR CONTACT PAGE */
+/* ************** */
+/*      FORM      */
+/* ************** */
 
 /* Form container */
 .form-container {
@@ -366,8 +406,6 @@ header {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
     appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
