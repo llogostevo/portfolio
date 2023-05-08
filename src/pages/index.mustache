@@ -17,29 +17,26 @@
 <body>
     <header>
         <img id="logo" src="prompt.png">
-        <nav>
-            <ul>
-                <!-- <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Skills</li> -->
-                <li><a class="button" href="\">Me</a></li>
-                <li><a class="button" href="#projects">My Work</a></li>
-                <li><a class="button" href="#contact">Let's Talk</a></li>
-            </ul>
+
+        <nav class="navbar">
+            <a class="button" href="\">Me</a>
+            <a class="button" href="#projects">My Work</a>
+            <a class="button" href="#contact">Let's Talk</a>
         </nav>
+
     </header>
     <div id="hero">
         <!-- TEMP PLACEHOLDER HERE FOR IMAGE -->
         <img class="img-profile" src="lloyd.png">
 
-        <!-- PAGE HEADING AND INTRO TITLE -->
-        <h1><span><img class="prompt mobile-hide" src="prompt_bw.png"></span>Hi, I'm Lloyd, Web Developer and Computer
-            Science Tutor</h1>
+        <!-- PAGE HEADING AND INTRO TITLE WITH EMOJIS-->
+        <h1 id="site-header">Hi &#x1F44B;, I'm Lloyd &#x1F603;!<span class="mobile-hide tablet-hide"> &mdash; </span><span class="reduce-heading">I am a Web Developer &#x1F4BB; and Computer Science Tutor &#x1F9D1;&#x200D;&#x1F3EB;</span></h1>
 
         <!-- CALL TO ACTION BUTTONS -->
-        <a class="button" href="#projects">My Work</a>
-        <a class="button" href="#contact">Let&#39;s Talk</a>
+        <div>
+            <a id="my-work-button" class="button" href="#projects">My Work</a>
+            <a id="contact-button" class="button" href="#contact">Let&#39;s Talk</a>
+        </div>
     </div>
     <div id="about">
         <h2><span><img class="prompt" src="prompt_bw.png"></span>About<span><img class="prompt"
