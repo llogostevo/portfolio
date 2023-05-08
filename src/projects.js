@@ -2,7 +2,7 @@ const PROJECTS = [
     {
       "id": 1,
       "title": "Portfolio Mockup",
-      "description": "Recreation of a portfolio figma mockup design using HTML and CSS",
+      "description": "Creation of a non responsive HTML & CSS portfolio home page based upon a figma design",
       "liveViewLink": "https://portfolio-practice-five.vercel.app/",
       "liveView": "live-view-on",
       "github": "github-on",
@@ -32,7 +32,7 @@ const PROJECTS = [
     {
       "id": 4,
       "title": "VidTings",
-      "description": "YouTube channel setup to support Computer Science and Digital Media",
+      "description": "YouTube channel setup to support the teaching of Computer Science and Digital Media",
       "liveView": "live-view-off",
       "youtube": "youtube-on", 
       "youtubeLink": "https://www.youtube.com/@VidTings",
