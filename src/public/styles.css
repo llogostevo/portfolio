@@ -206,6 +206,10 @@ a {
     transition: all 0.2s ease-in-out;
 }
 
+/* talk button has 2rem spacing */
+.talk-button {
+    margin: 2rem;
+}
 
 /* ******************************** */
 /* ******************************** */
@@ -274,10 +278,10 @@ header {
     /* vertically in the middle */
     align-items: center;
 }
-
+/* 
 #about .talk-button {
     margin: 1rem;
-}
+} */
 
 #about-container a, #inline-linkedin {
     margin: 0px;
