@@ -269,7 +269,7 @@ header {
 
 #about-grid {
     display:grid;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 #about-image-container {
@@ -285,6 +285,13 @@ header {
     margin: 0px;
     padding:0px;
 }
+
+/* Styles for screens between 480px and 768px */
+@media only screen and (min-width: 481px) {
+    #about-grid {
+        gap: 3rem;
+    }
+  }
 
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
