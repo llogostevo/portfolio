@@ -739,3 +739,7 @@ header {
       }
   }
 /* NB> Social image container styled within about styling.  */
+
+#emailbutton-contact-success {
+    margin: 3rem;
+}

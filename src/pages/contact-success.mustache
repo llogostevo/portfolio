@@ -36,8 +36,11 @@
                     src="prompt_bw.png"></span></h2>
         {{! Status Message will go in here }}
         <p>{{ statusMessage }}</p>
+
+            <a id="emailbutton-contact-success" class="button" href="\contactme">Contact Me</a>
+
         {{! form displayed again }}
-        <div class="form-container">
+        {{! <div class="form-container">
             <form action="/contactme" method="POST">
                 <div class="form-items">
                     <label class="form-label" for="name">Name:</label>
@@ -60,7 +63,7 @@
             
             </form>
         </div>
-    </div>
+    </div> }}
 {{!  Social Media }}
 <div id="contact-social-grid">
 <div class="social-image-container">

@@ -61,7 +61,7 @@ app.post('/contactme', (req,res) =>{
     const mailOptions = {
         from: process.env.EMAIL_ID,
         to: process.env.EMAIL_ID,
-        subject: `New inquiry from ${name} - ${inquiryType}`,
+        subject: `New inquiry from ${name} - ${email} - ${inquiryType}`,
         text: message
     };
 
@@ -74,7 +74,6 @@ app.post('/contactme', (req,res) =>{
             console.log('Email sent: '+info.response);
             const statusMessage = 'Your message was sent successfully!';
             res.redirect('/contact-success?status=' + encodeURIComponent(statusMessage));
-            // res.status(200).send('Your message was sent successfully!');
         }
     });
 
@@ -82,7 +81,7 @@ app.post('/contactme', (req,res) =>{
 
 // contact success route
 app.get('/contact-success', (req, res) => {
-    const statusMessage = req.query.status || 'Your message was sent successfully!';
+    const statusMessage = req.query.status ;
     res.render('contact-success', { statusMessage: statusMessage });
 });
 
