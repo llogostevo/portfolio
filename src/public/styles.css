@@ -207,7 +207,8 @@ a {
 }
 
 /* talk button has 2rem spacing */
-.talk-button {
+/* any live view showing has 2rem spacing */
+.talk-button, .live-view-on {
     margin: 2rem;
 }
 
