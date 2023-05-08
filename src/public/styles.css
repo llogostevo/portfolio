@@ -289,7 +289,7 @@ header {
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
 
-    #about p, #about h {
+    #about p, #about h2 {
         text-align: left;
     }
 
@@ -469,7 +469,6 @@ header {
     box-sizing: border-box;
     border-style: solid;
     background-color: white;
-    /* color: black; */
     font-size: 1rem;
     box-shadow: 5px 5px;
     padding: 10px;
@@ -481,9 +480,9 @@ header {
         }
 
         /* Inner Card Styling */
-        .card .button {
+        /* .card .button {
             margin: 10px 0px;
-        }
+        } */
         .card img {
             /* display: inline-block; */
             filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.2));
