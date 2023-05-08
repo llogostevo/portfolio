@@ -303,8 +303,6 @@ header {
     }
   }
 
-
-
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
 
@@ -427,8 +425,6 @@ header {
         padding-right:10%;             
       }
   }
-
-  
 
 
 /* ******************************** */
