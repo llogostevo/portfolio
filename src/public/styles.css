@@ -62,7 +62,11 @@ h6 {
     font-family: 'Abril Fatface', cursive;
     text-decoration: underline;
     text-decoration-color: #FFE872;
-    text-decoration-thickness: 5px;
+    /* text-decoration-thickness: 5px; */
+}
+
+.card h1 {
+    font-size: 1.5rem;
 }
 
 /* all anchor links  */
