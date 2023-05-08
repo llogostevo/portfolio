@@ -520,12 +520,16 @@ header {
 /*           CARD INNER STYLING     */
 /* ******************************** */
 
-.card {
+/* .card {
     padding: 1rem;
-}
+} */
 .card p{
     margin: 0px;
     padding: 0px;
+}
+
+.card h3 {
+    margin: 0;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -561,9 +565,7 @@ header {
         }
 
         /* Inner Card Styling */
-        /* .card .button {
-            margin: 10px 0px;
-        } */
+     
         .card img {
             /* display: inline-block; */
             filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.2));
