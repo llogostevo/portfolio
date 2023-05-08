@@ -291,8 +291,8 @@ header {
 
     #about-image-container {
         flex-direction: column;
-        justify-content: center;
-        align-items: space-evenly;
+        justify-content: space-evenly; 
+        align-items: center;
     }
 
   }
