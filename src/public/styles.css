@@ -307,7 +307,7 @@ header {
 /* Styles for screens between 768px and above */
 @media only screen and (min-width: 769px) {
 
-    #about p, #about h2 {
+    #about p {
         text-align: left;
     }
 
@@ -328,6 +328,10 @@ header {
   /* Styles for screens larger than 992px */
   @media only screen and (min-width: 993px) {
     #about, #about p {
+        text-align: left;
+    }
+
+    #about h2 {
         text-align: left;
     }
   }
@@ -480,15 +484,12 @@ header {
     flex-direction: column;
     align-items: center;
     height: auto;
-    /* flex-basis: 100%; */
     /* settings for card styling */
     box-sizing: border-box;
     border-style: solid;
     background-color: white;
     font-size: 1rem;
     box-shadow: 5px 5px;
-    /* padding: 10px;
-    padding-bottom: 30px; */
 }
 
         .card:hover {
