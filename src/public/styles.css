@@ -487,8 +487,8 @@ header {
     background-color: white;
     font-size: 1rem;
     box-shadow: 5px 5px;
-    padding: 10px;
-    padding-bottom: 30px;
+    /* padding: 10px;
+    padding-bottom: 30px; */
 }
 
         .card:hover {
