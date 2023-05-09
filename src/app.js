@@ -63,6 +63,8 @@ const transporter = nodemailer.createTransport({
 // contact form route
 app.post('/contactme',recaptcha.middleware.verify, (req,res) =>{
     // Check if reCAPTCHA validation failed
+
+    // if it fails then redirect with the message
     if (req.recaptcha.error) {
         const statusMessage = 'reCAPTCHA validation failed. Please try again.';
         return res.redirect('/contact-success?status=' + encodeURIComponent(statusMessage));
