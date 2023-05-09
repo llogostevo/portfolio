@@ -12,9 +12,15 @@ const PROJECTS = require('./projects');
 const SKILLS = require('./skills');
 
 
+// Google reCaptcha
+const {RecaptchaV2} = require('express-recaptcha');
+
 
 // create a new instance of the express application
 const app = express();
+
+// Google reCaptcha
+const recaptcha = new RecaptchaV2('6LcTxvUlAAAAABqtl0rvDVUQImUxzHjWW5ALfasV', process.env.RECAPTCHA_SECRETKEY)
 
 // configure app to use bodyparser middleware to take from form to email 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -55,7 +61,15 @@ const transporter = nodemailer.createTransport({
 });
 
 // contact form route
-app.post('/contactme', (req,res) =>{
+app.post('/contactme',recaptcha.middleware.verify, (req,res) =>{
+    // Check if reCAPTCHA validation failed
+
+    // if it fails then redirect with the message
+    if (req.recaptcha.error) {
+        const statusMessage = 'reCAPTCHA validation failed. Please try again.';
+        return res.redirect('/contact-success?status=' + encodeURIComponent(statusMessage));
+    }
+    
     console.log(req.body);
     const {name, email, inquiryType, message} = req.body;
     const mailOptions = {

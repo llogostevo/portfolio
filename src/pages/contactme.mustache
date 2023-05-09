@@ -54,8 +54,12 @@
 
                     <label class="form-label" for="message">Message:</label>
                     <textarea class="form-textarea" id="message" name="message" required></textarea>
+                    <label class="form-label" for="message"></label>
+                    <div class="g-recaptcha center" data-sitekey="6LcTxvUlAAAAABqtl0rvDVUQImUxzHjWW5ALfasV"></div>
                 </div>
-            <button class="button form-button" type="submit">Send</button>
+
+            
+            <button id="send-button" class="button form-button" type="submit">Send</button>
             
             </form>
         </div>
@@ -93,5 +97,9 @@
             <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a>
         </div>
     </div>
+
+{{! recaptcha script }}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </body>
 </html>

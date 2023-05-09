@@ -1,6 +1,18 @@
 
 
 #TODO
+- recaptcha, causing issues with branch loading
+
+#Future Developments
+- create burger menu
+- menu pops across / down from mobile view
+- setup breakpoint for tablet
+ - burger menu to disapear
+ - horziontal menu to appear
+
+#Someday: 
+
+<!-- #Done: -->
 <!-- - find fonts from google font(done)
  - apply fonts (done) -->
  <!-- - apply base CSS styles and font size -->
@@ -62,14 +74,7 @@
     - text width to respond appropriately
     - cards to adjust to page -->
 
-#Future Developments
-- create burger menu
-- menu pops across / down from mobile view
-- setup breakpoint for tablet
- - burger menu to disapear
- - horziontal menu to appear
 
-#Someday: 
 
 <!-- - find icon to replace + as a star (done - see blackstar / whitestar) -->
 <!-- - repeat black stars for star rating
