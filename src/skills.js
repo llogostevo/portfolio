@@ -12,11 +12,13 @@ const SKILLS = [
     {
         "title": "Algorithms",
         "topics": [
-            { "name": "Bubble Sort", "level": ["*", "*", "*"] },
-            { "name": "Merge Sort", "level": ["*", "*", "*"] },
-            { "name": "Insertion Sort", "level": ["*", "*", "*"] },
+            { "name": "Bubble Sort", "level": ["*", "*"] },
+            { "name": "Merge Sort", "level": ["*", "*"] },
+            { "name": "Insertion Sort", "level": ["*", "*"] },
             { "name": "Dijkstra's", "level": ["*"] },
-            { "name": "A*", "level": ["*"] }
+            { "name": "A*", "level": ["*"] },
+            { "name": "BigO", "level": ["*", "*"] }
+
         ]
     },
     {

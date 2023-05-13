@@ -512,22 +512,6 @@ header {
     margin-bottom: 0.7rem;
 }
 
-/* Styles for screens between 320px and 480px */
-/* @media only screen and (max-width: 480px) {
-    .card p{
-        font-size: 0.875rem;
-    }
-    
-    .card h3 {
-        font-size: 1rem;
-    }
-
-    .card {
-        padding: 0.2rem;
-    }
-    
-  } */
-
 .card  {
     /* flex settings for inside card */
     display: flex;
