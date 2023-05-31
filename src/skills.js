@@ -35,8 +35,9 @@ const SKILLS = [
         "topics": [
             { "name": "HTML", "level": ["*", "*", "*"] },
             { "name": "CSS", "level": ["*", "*", "*"] },
-            { "name": "JavaScript", "level": ["*"] },
+            { "name": "JavaScript", "level": ["*", "*"] },
             { "name": "jQuery", "level": ["*"] },
+            { "name": "React", "level": ["*"] },
             { "name": "Bootstrap", "level": ["*", "*", "*"] },
             { "name": "Accessibility Standards", "level": ["*", "*"] },
             { "name": "Vercel", "level": ["*", "*"] }
