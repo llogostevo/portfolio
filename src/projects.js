@@ -31,15 +31,6 @@ const PROJECTS = [
     },
     {
       "id": 4,
-      "title": "VidTings",
-      "description": "YouTube channel setup to support the teaching of Computer Science and Digital Media",
-      "liveView": "live-view-off",
-      "youtube": "youtube-on", 
-      "youtubeLink": "https://www.youtube.com/@VidTings",
-      "github": "github-off"
-    },
-    {
-      "id": 5,
       "title": "React and React Routes",
       "description": "Completed a tutorial to learn basics of React and react routes",
       "liveViewLink": "https://e-commerce-practice-two.vercel.app/",
@@ -48,6 +39,15 @@ const PROJECTS = [
       "github": "github-on", 
       "githubLink": "https://github.com/llogostevo/eCommercePractice"
 
+    },
+    {
+      "id": 5,
+      "title": "VidTings",
+      "description": "YouTube channel setup to support the teaching of Computer Science and Digital Media",
+      "liveView": "live-view-off",
+      "youtube": "youtube-on", 
+      "youtubeLink": "https://www.youtube.com/@VidTings",
+      "github": "github-off"
     },
     // {
     //   "id": 5,
