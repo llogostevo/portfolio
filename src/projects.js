@@ -38,6 +38,17 @@ const PROJECTS = [
       "youtubeLink": "https://www.youtube.com/@VidTings",
       "github": "github-off"
     },
+    {
+      "id": 5,
+      "title": "React and React Routes",
+      "description": "Completed a tutorial to learn basics of React and react routes",
+      "liveViewLink": "https://e-commerce-practice-two.vercel.app/",
+      "liveView": "live-view-on",
+      "youtube": "youtube-off", 
+      "github": "github-on", 
+      "githubLink": "https://github.com/llogostevo/eCommercePractice"
+
+    },
     // {
     //   "id": 5,
     //   "title": "Home Diabetic Monitoring",
