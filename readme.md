@@ -11,6 +11,7 @@
  - horziontal menu to appear
 
 #Someday: 
+- redraft portfolio using react
 
 <!-- #Done: -->
 <!-- - find fonts from google font(done)
