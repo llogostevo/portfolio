@@ -52,13 +52,26 @@ const PROJECTS = [
     },
     {
       "id": 6,
-      "title": "VidTings",
-      "description": "YouTube channel setup to support the teaching of Computer Science and Digital Media",
-      "liveView": "live-view-off",
-      "youtube": "youtube-on", 
-      "youtubeLink": "https://www.youtube.com/@VidTings",
-      "github": "github-off"
+      "title": "NextJS 13, TypeScript and Tailwind",
+      "description": "Completed a tutorial to learn basics of Next 13",
+      "liveViewLink": "https://next-js-wiki-search.vercel.app/",
+      "liveView": "live-view-on",
+      "youtube": "youtube-off", 
+      "github": "github-on", 
+      "githubLink": "https://github.com/llogostevo/nextJSWikiSearch"
+
     },
+    // {
+    //   "id": 6,
+    //   "title": "VidTings",
+    //   "description": "YouTube channel setup to support the teaching of Computer Science and Digital Media",
+    //   "liveView": "live-view-off",
+    //   "youtube": "youtube-on", 
+    //   "youtubeLink": "https://www.youtube.com/@VidTings",
+    //   "github": "github-off"
+    // },
   ]
   
   module.exports = PROJECTS;
+
+  
